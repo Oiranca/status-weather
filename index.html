@@ -3,12 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Aplicación del Clima con API OpenWeatherMap" />
+    <meta
+      name="description"
+      content="Aplicación del Clima con API OpenWeatherMap"
+    />
     <meta name="keywords" content="clima, tiempo, meteorología, weather" />
     <meta name="author" content="Samuel Romero Arbelo" />
     <title>Estado del Clima</title>
     <link rel="stylesheet" href="src/css/main.css" />
-    <script src="src/js/weather.js" defer></script>
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   </head>
   <body>
@@ -19,21 +21,18 @@
     <main>
       <div class="weather-container">
         <div class="search-box">
-          <input 
-            type="text" 
-            id="pais" 
+          <input
+            type="text"
+            id="pais"
             placeholder="Introduce el nombre de una ciudad"
             onkeypress="if(event.key === 'Enter') getWeather()"
           />
           <button onclick="getWeather()">🌤️ Ver clima</button>
         </div>
-        
-        <div id="resultado" style="display: none;"></div>
+
+        <div id="resultado" style="display: none"></div>
       </div>
     </main>
-
-    <footer>
-      <p>&copy; 2025 - Aplicación del Clima</p>
-    </footer>
+    <script src="src/js/weather.js" defer></script>
   </body>
 </html>
