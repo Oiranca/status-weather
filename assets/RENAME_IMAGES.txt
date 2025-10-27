@@ -1,0 +1,25 @@
+==================================================
+  INSTRUCCIONES PARA RENOMBRAR LAS IMÁGENES
+==================================================
+
+Las 4 imágenes que te han proporcionado deben ser
+renombradas y colocadas en este directorio (assets/).
+
+RENOMBRA LAS IMÁGENES ASÍ:
+
+  🌞 Sol (cielo despejado) → weather-clear.png
+  ☁️ Nubes (nublado)      → weather-clouds.png
+  🌧️ Lluvia intensa      → weather-rain.png
+  🌦️ Llovizna con sol    → weather-drizzle.png
+
+PASOS:
+
+1. Identifica cada imagen según su contenido
+2. Renómbrala con el nombre correcto de arriba
+3. Colócala en la carpeta assets/
+4. Borra este archivo (RENAME_IMAGES.txt)
+5. Abre index.html en tu navegador
+
+¡Listo! La aplicación ya funcionará.
+
+==================================================

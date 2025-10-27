@@ -1,6 +1,6 @@
-# HTML CSS Template
+# 🌤️ Status Weather - Aplicación del Clima
 
-A clean and minimal HTML CSS template with organized folder structure and linting configuration for web development projects.
+Una aplicación web interactiva que muestra el clima actual de cualquier ciudad del mundo con iconos visuales según las condiciones meteorológicas.
 
 ## 🌐 Language / Idioma
 
@@ -9,44 +9,60 @@ A clean and minimal HTML CSS template with organized folder structure and lintin
 
 ## 🚀 Features
 
-- **Clean HTML5 structure** with semantic markup
-- **Minimal CSS** with custom properties and responsive design
-- **Organized folder structure** for scalable development
-- **Linting tools** with ESLint, Prettier, HTMLHint, and Stylelint
-- **Node.js configuration** with .nvmrc file
+- **Consulta del clima en tiempo real** usando la API de OpenWeatherMap
+- **Iconos visuales dinámicos** que cambian según el estado del clima
+- **4 estados meteorológicos**: Clear (Despejado), Clouds (Nublado), Rain (Lluvia), Drizzle (Llovizna)
+- **Diseño responsive** adaptable a dispositivos móviles
+- **Interfaz moderna** con gradientes y animaciones
+- **Información detallada**: temperatura, viento, presión atmosférica
 
 ## 📁 Project Structure
 
 ```
-HTML-CSS-Template/
-├── assets/                 # Static assets
-│   ├── fonts/             # Custom fonts
-│   ├── icons/             # Icons and favicon
-│   └── images/            # Images
-├── docs/                  # Documentation
-├── src/                   # Source files
+status-weather/
+├── assets/                     # Static assets
+│   ├── weather-clear.png      # Icon for clear sky ☀️
+│   ├── weather-clouds.png     # Icon for cloudy ☁️
+│   ├── weather-rain.png       # Icon for rain 🌧️
+│   └── weather-drizzle.png    # Icon for drizzle 🌦️
+├── docs/                       # Documentation
+├── src/                        # Source files
 │   ├── css/
-│   │   └── main.css       # Main stylesheet
-│   └── js/                # JavaScript files (when needed)
-├── index.html             # Main HTML file
-├── package.json           # NPM configuration and scripts
-├── .nvmrc                 # Node.js version
-├── .gitignore             # Git ignore rules
-├── eslint.config.js       # ESLint configuration
-├── .prettierrc            # Prettier configuration
-├── .htmlhintrc            # HTMLHint configuration
-├── .stylelintrc.json      # Stylelint configuration
-└── README.md              # Project documentation
+│   │   └── main.css           # Main stylesheet
+│   └── js/
+│       └── weather.js         # Weather app logic
+├── index.html                  # Main HTML file
+├── INSTRUCCIONES_IMAGENES.md  # Image setup instructions
+├── package.json                # NPM configuration and scripts
+└── README.md                   # Project documentation
 ```
 
 ## 🛠️ Installation
 
 1. **Clone or download the project**
-2. **Ensure Node.js is installed** (version specified in .nvmrc)
-3. **Install dependencies:**
+2. **Add weather icons** (see instructions below)
+3. **Open `index.html`** in your browser
+
+### ⚠️ Important: Weather Icons Setup
+
+The application requires 4 PNG images in the `assets/` folder. Rename them as follows:
+
+- 🌞 **Sun icon** → `weather-clear.png`
+- ☁️ **Clouds icon** → `weather-clouds.png`
+- 🌧️ **Heavy rain icon** → `weather-rain.png`
+- 🌦️ **Light rain with sun icon** → `weather-drizzle.png`
+
+See `INSTRUCCIONES_IMAGENES.md` for detailed instructions.
+
+## 🛠️ Installation (for developers)
+
+1. **Ensure Node.js is installed** (version specified in .nvmrc)
+2. **Install dependencies:**
    ```bash
    npm install
    ```
+
+````
 
 ## 📝 Available Scripts
 

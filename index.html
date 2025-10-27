@@ -1,33 +1,39 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="HTML CSS Template" />
-    <meta name="keywords" content="template, html, css" />
-    <meta name="author" content="Your Name" />
-    <title>HTML CSS Template</title>
-
-    <!-- CSS -->
+    <meta name="description" content="Aplicación del Clima con API OpenWeatherMap" />
+    <meta name="keywords" content="clima, tiempo, meteorología, weather" />
+    <meta name="author" content="Samuel Romero Arbelo" />
+    <title>Estado del Clima</title>
     <link rel="stylesheet" href="src/css/main.css" />
-
-    <!-- Favicon -->
+    <script src="src/js/weather.js" defer></script>
     <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
   </head>
   <body>
-    <!-- Header -->
     <header>
-      <!-- Navigation content here -->
+      <h1>🌤️ Consulta del Clima</h1>
     </header>
 
-    <!-- Main Content -->
     <main>
-      <!-- Main content here -->
+      <div class="weather-container">
+        <div class="search-box">
+          <input 
+            type="text" 
+            id="pais" 
+            placeholder="Introduce el nombre de una ciudad"
+            onkeypress="if(event.key === 'Enter') getWeather()"
+          />
+          <button onclick="getWeather()">🌤️ Ver clima</button>
+        </div>
+        
+        <div id="resultado" style="display: none;"></div>
+      </div>
     </main>
 
-    <!-- Footer -->
     <footer>
-      <!-- Footer content here -->
+      <p>&copy; 2025 - Aplicación del Clima</p>
     </footer>
   </body>
 </html>
